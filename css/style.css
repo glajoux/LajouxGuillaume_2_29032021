@@ -1,0 +1,348 @@
+/*Déclaration des polices de caractères */
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('../font/raleway-variablefont_wght-webfont.eot');
+    src: url('../font/raleway-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../font/raleway-variablefont_wght-webfont.woff') format('woff'),
+         url('../font/raleway-variablefont_wght-webfont.ttf') format('truetype'),
+         url('../font/raleway-variablefont_wght-webfont.svg#ralewaythin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* Description des propiétés commune de la page */
+body{
+    font-family: 'ralewaythin' , sans-serif;
+}
+
+#bloc_page{
+    width: 95%; 
+    margin: auto;
+}
+
+h1{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.conteneur, aside, footer{
+    background-color: #F2F2F2;
+}
+
+.titre{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Mise en place du header */
+header, nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    width: 30%;
+}
+
+nav a{
+    color: #0065FC ;
+}
+nav li{
+    padding: 5px;
+}
+
+nav a:hover{
+    padding-top: 15px;
+    border-top: 1px solid #0065FC;
+}
+
+/*Mise ne place de la partie recherche*/
+
+.titre{
+    margin-bottom: 5px;
+}
+
+.description{
+    margin-top: 0;
+}
+form{
+    border: 1px solid #F2F2F2;
+    border-radius: 8px;
+    width: 300px;
+    background-color: #F2F2F2;
+    height: 30px;
+    display: flex;
+}
+
+form input{
+    border: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+form i{
+    margin: auto;
+    padding-right: 6px;
+}
+
+form input[type="button"]{
+    color: white;
+    background-color: #0065FC;
+    border-radius: 0 8px 8px 0;
+}
+
+
+.filtre, .filtre ul, .filtre a {
+    display: flex;
+    align-items: center;
+}
+
+.filtre{
+    width: 700px;
+}
+
+.filtre ul{
+    font-weight: bold;
+    flex: 2;
+    justify-content: space-between;
+}
+
+.filtre h2{
+    flex: 0.1;
+}
+
+.filtre a{
+    border: #F2F2F2 solid 2px;
+    border-radius: 20px;
+    padding: 0 10px 0 0;
+    color: black;
+}
+
+.filtre i{
+    color: #0065FC;
+    background-color:  #DEEBFF;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.filtre a:hover{
+    background-color: #DEEBFF;
+    box-shadow: 2px 2px 3px #0065FC;
+}
+
+.recherche p i{
+    border: 1px solid #F2F2F2;
+    width: 10px;
+    height: 10px;
+    color: #0065FC;
+    padding: 5px 5px 10px 10px;
+    border-radius: 50%;
+}
+
+/*Mise en place de la section hebergement */
+
+#hebergement{
+    display: flex;
+    height: 750px;
+}
+
+.logis img{
+    object-fit: cover;
+    width: 100%;
+    height: 60%;
+    border-radius: 15px 15px 0 0;
+}
+
+#hebergement h1{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+.conteneur{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin-right: 30px;
+    border-radius: 15px;
+    padding: 0 15px;
+}
+
+.logement{
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    margin: auto;
+}
+
+.logis{
+    background-color: white;
+    width: 30%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.logis a{
+    color: #000;
+}
+
+.etoile{
+    color: #0065FC;
+}
+
+aside{
+    flex: 0.8;
+    border-radius: 15px; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.titre_aside{
+    display: flex;
+    justify-content: space-between; 
+    width: 450px;
+    margin: auto;
+}
+
+aside img{
+    object-fit: cover;
+    width: 40%;
+    height: 190px;
+    border-radius: 15px 0 0 15px;
+    margin: 5px;
+}
+
+aside a{
+    width: 90%;
+    text-decoration: none;
+    color: black;
+    margin: auto;
+
+}
+
+.populaire{
+    height: 200px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    border-radius: 15px;
+}
+
+
+aside .etoile{
+    margin-top: 50%;
+}
+
+/*Mise en place du footer */
+
+footer{
+    display: flex;
+    margin-top: 20px;
+}
+
+.pied{
+    padding-top: 20px;
+    width: 30%;
+    margin: auto;
+    
+}
+
+.pied ul{
+    padding-left: 0;
+}
+
+.pied a{
+    color: black;
+}
+
+.pied li{
+    line-height: 200%;
+}
+
+/*Mise en place de la section activité */
+
+
+#activite a{
+    color: black;
+}
+
+.bloc_general{
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+}
+
+.bloc_general .bloc, .bloc_general> a{
+    width: 23%;
+}
+
+.activite1{
+    height: 325px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.activite2{
+    height: 250px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.activite3{
+    height: 250px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.activite4{
+    height: 325px;
+    border-radius: 15px;
+}
+
+
+.bloc img{
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+    border-radius: 15px 15px 0 0;
+}
+
+.activite4 img{
+    object-fit: cover;
+    width: 100%;
+    height: 85%;
+    border-radius: 15px 15px 0 0;
+}
+
+.grande{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.grande img{
+    object-fit: cover;
+    max-height: 550px;
+    border-radius: 15px 15px 0 0 ;
+}
+
+div[class*="activite"], .grande{
+    box-shadow:-5px 5px 5px 0px #F2F2F2, 
+                5px 5px 5px 0px #F2F2F2;
+}
