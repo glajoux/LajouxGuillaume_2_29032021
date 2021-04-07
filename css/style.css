@@ -1,19 +1,14 @@
 /*Déclaration des polices de caractères */
 @font-face {
-    font-family: 'ralewaythin';
-    src: url('../font/raleway-variablefont_wght-webfont.eot');
-    src: url('../font/raleway-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('../font/raleway-variablefont_wght-webfont.woff') format('woff'),
-         url('../font/raleway-variablefont_wght-webfont.ttf') format('truetype'),
-         url('../font/raleway-variablefont_wght-webfont.svg#ralewaythin') format('svg');
+    font-family: 'raleway';
+    src: url('../font/Raleway-Light.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
 
 }
 /* Description des propiétés commune de la page */
 body{
-    font-family: 'ralewaythin' , sans-serif;
+    font-family: 'raleway' , sans-serif;
 }
 
 #bloc_page{
@@ -24,6 +19,10 @@ body{
 h1{
     font-size: 1.3em;
     font-weight: bold;
+}
+
+p{
+    font-size: 0.9em;
 }
 
 h2{
@@ -58,17 +57,23 @@ nav{
     width: 30%;
 }
 
-nav a{
+nav li{
     color: #0065FC ;
 }
+
+nav a[href*="hebergement"]{
+    border-top: 1px solid #0065FC;
+    padding-top: 15px;
+}
+
+nav a[href*="activite"]{
+    color: black;
+}
+
 nav li{
     padding: 5px;
 }
 
-nav a:hover{
-    padding-top: 15px;
-    border-top: 1px solid #0065FC;
-}
 
 /*Mise ne place de la partie recherche*/
 
