@@ -70,13 +70,10 @@ nav a[href*="activite"]{
     color: black;
 }
 
-nav li{
-    padding: 5px;
-}
-
-
 /*Mise ne place de la partie recherche*/
-
+.recherche{
+    width: 70%;
+}
 .titre{
     margin-bottom: 5px;
 }
@@ -84,6 +81,7 @@ nav li{
 .description{
     margin-top: 0;
 }
+
 form{
     border: 1px solid #F2F2F2;
     border-radius: 8px;
@@ -91,6 +89,7 @@ form{
     background-color: #F2F2F2;
     height: 30px;
     display: flex;
+    margin-bottom: 10px;
 }
 
 form input{
@@ -114,34 +113,32 @@ form input[type="button"]{
 .filtre, .filtre ul, .filtre a {
     display: flex;
     align-items: center;
-}
-
-.filtre{
-    width: 700px;
+    justify-content: space-between;
 }
 
 .filtre ul{
     font-weight: bold;
-    flex: 2;
-    justify-content: space-between;
+    flex: 1;
 }
 
 .filtre h2{
-    flex: 0.1;
+    font-size: 1em;
 }
 
+
 .filtre a{
-    border: #F2F2F2 solid 2px;
-    border-radius: 20px;
-    padding: 0 10px 0 0;
+    border: #F2F2F2 solid 1px;
+    border-radius: 25px;
+    padding: 0px 15px 0 0;
     color: black;
 }
 
 .filtre i{
     color: #0065FC;
     background-color:  #DEEBFF;
-    padding: 8px;
-    border-radius: 20px;
+    border-radius: 100%;
+    padding: 10px;
+    margin-right: 10px;
 }
 
 .filtre a:hover{
@@ -149,13 +146,15 @@ form input[type="button"]{
     box-shadow: 2px 2px 3px #0065FC;
 }
 
-.recherche p i{
-    border: 1px solid #F2F2F2;
-    width: 10px;
-    height: 10px;
+.fa-info{
+    border: #F2F2F2 1px solid;
     color: #0065FC;
-    padding: 5px 5px 10px 10px;
-    border-radius: 50%;
+    padding: 5px 10px;
+    border-radius: 100%;
+}
+
+.recherche p{
+    margin-top: 0;
 }
 
 /*Mise en place de la section hebergement */
@@ -197,6 +196,7 @@ form input[type="button"]{
 .logis{
     background-color: white;
     width: 30%;
+    height: 100%;
     padding: 5px;
     margin-bottom: 20px;
     border-radius: 15px;
@@ -206,10 +206,11 @@ form input[type="button"]{
     color: #000;
 }
 
-.etoile{
+.logis .etoile{
     color: #0065FC;
 }
 
+/*Mise en place de la partie aside(populaire) dans la section hebergement */
 aside{
     flex: 0.8;
     border-radius: 15px; 
@@ -252,6 +253,7 @@ aside a{
 
 aside .etoile{
     margin-top: 50%;
+    color: #0065FC;
 }
 
 /*Mise en place du footer */
