@@ -55,6 +55,10 @@ header, nav ul{
     justify-content: space-between;
 }
 
+header{
+    margin-top: 10px;
+}
+
 nav{
     width: 30%;
 }
