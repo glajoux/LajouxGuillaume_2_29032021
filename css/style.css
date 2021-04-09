@@ -104,13 +104,16 @@ form input{
 
 form i{
     margin: auto;
-    padding-right: 6px;
 }
 
-form input[type="button"]{
+input[type="button"]{
     color: white;
     background-color: #0065FC;
     border-radius: 0 8px 8px 0;
+}
+
+i.fas.fa-search{
+    display: none;
 }
 
 
@@ -424,4 +427,98 @@ footer{
     line-height: 200%;
 }
 
+/*Mise en place des media queries pour les tablettes */
 
+@media all and (min-width: 768px) and (max-width: 1023px){
+
+}
+
+/*Mise en place des media queries pour les tel <768px */
+
+@media all and (max-width: 767px){
+    /*Mise en place du header en media queries tel < 768px */
+    header {
+        margin-bottom: 80px;
+        padding: 0 20px;
+    }
+    .puce1{
+        position: absolute;
+        width: 50%;
+        top: 12%;
+        left: 5%;
+        text-align: center;
+        border-bottom: 2px solid #0065FC;
+        padding-bottom: 10px;
+    }
+
+    nav a[href*="hebergement"]{
+        border-top: none;
+    }            
+
+    .puce2{
+        position: absolute; 
+        width: 50%;
+        top: 12%;
+        right: 5%;
+        text-align: center;
+        border-bottom: #F2F2F2 2px solid;
+        padding-bottom: 10px;
+    }
+    
+    nav ul .puce3{
+        width: 100%;
+        text-align: right;
+    }
+
+    .titre{
+        width: 80%;
+        margin: auto;
+    }
+
+    .description{
+        width: 80%;
+        margin: 5% auto;
+    }
+
+    /*Mise en place de la section recherche en media queries tel <768px */ 
+    .recherche{
+        width: 80%;
+        margin: auto;
+    }
+
+    input[type="search"]{
+        width: 80%;
+    }
+
+    input[type="button"]{
+        display: none;
+    }
+
+    .fa-search{
+        display: block;
+        margin: 0;
+        padding:7px;
+        background-color: #0065FC;
+        border-radius: 8px;
+    }
+
+    .fa-map-marker-alt{
+        width: 10%;
+        margin: 0;
+        text-align: center;
+        padding: 6px;
+    }
+        
+    .filtre{
+        flex-direction: column;
+    }
+
+    .filtre h2{
+        width: 100%;
+        text-align: left;
+    }
+
+    #hebergement, #activite, footer{
+        display: none;
+    }
+}
