@@ -180,6 +180,11 @@ form input[type="button"]{
 
 #hebergement h2{
     font-size: 0.9em;
+    font-weight: bold;
+}
+
+span{
+    font-weight: bold;
 }
 
 .conteneur{
@@ -384,7 +389,7 @@ aside .etoile{
 .activite4 img{
     object-fit: cover;
     width: 100%;
-    height: 78%;
+    height: 77%;
     border-radius: 15px 15px 0 0;
 }
 
