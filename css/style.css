@@ -494,7 +494,7 @@ footer{
         display: none;
     }
 
-    .fa-search{
+    i.fas.fa-search{
         display: block;
         margin: 0;
         padding:7px;
@@ -511,6 +511,7 @@ footer{
         
     .filtre{
         flex-direction: column;
+        width: 100%;
     }
 
     .filtre h2{
@@ -518,7 +519,75 @@ footer{
         text-align: left;
     }
 
-    #hebergement, #activite, footer{
+    .filtre ul{
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 0;
+        min-height: 150px;
+        margin-top: 0;
+    }
+
+    .fa-info{
+        float: left;
+        margin-right: 8px;
+    }
+
+    #hebergement{
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    aside{
+        justify-content: space-around;
+        border-radius: 0;
+        height: 100%;
+    }
+
+    aside a{
+        margin: 15px auto;
+    }
+
+    aside img{
+        height: 165px;
+        width: 45%;
+    }
+
+    .conteneur{
+        width: 100%;
+        border-radius: 0;
+        background-color: #FFF;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .logement{
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    .logement a{
+        width: 85%;
+        box-shadow: -5px 5px 5px 0px #F2F2F2, 
+                    5px 5px 5px 0px #F2F2F2, 
+                    5px -5px 5px 0px #F2F2F2, 
+                    -5px -5px 5px 0px #F2F2F2;
+        margin: 7px auto;
+}
+
+    .logis img{
+        height: 165px;
+    }
+
+    .conteneur h1, .plus{
+        margin-left: 25px;
+    }
+
+    .plus{
+        margin-top: 20px;
+    }
+
+    #activite, footer{
         display: none;
     }
 }
