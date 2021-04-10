@@ -397,8 +397,10 @@ aside .etoile{
 }
 
 div[class*="activite"], .grande{
-    box-shadow:-5px 5px 5px 0px #F2F2F2, 
-                5px 5px 5px 0px #F2F2F2;
+    box-shadow: -5px 5px 5px 0px #F2F2F2, 
+                5px 5px 5px 0px #F2F2F2, 
+                5px -5px 5px 0px #F2F2F2, 
+                -5px -5px 5px 0px #F2F2F2;
 }
 
 
@@ -586,8 +588,49 @@ footer{
     .plus{
         margin-top: 20px;
     }
+    /*Mise en place de la partie activité en mode responsive pour les tel de <768px */
+    #activite h1{
+        margin-left: 25px;
+    }
+    
+        .bloc_general{
+            flex-direction: column;
+            height: 100%;
+        }
 
-    #activite, footer{
-        display: none;
+        .bloc_general a, .bloc_general .bloc{
+            width: 85%;
+            margin: auto;
+        }
+
+        .bloc{
+            margin-bottom: 0;
+        }
+
+        .bloc_general img{
+            height: 80%;
+        }
+
+        .grande{
+            height: 240px;
+        }
+
+        .activite1, .activite2, .activite3, .activite4{
+            height: 240px;
+            margin: 30px 0;
+        }
+
+        .activite1 h2{
+            padding: 5px 0;
+        }
+    /*Mise en place de la partie footer en responsive pour tel <768px */
+    footer{
+        flex-direction: column;
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .pied{
+        width: 100%;
     }
 }
