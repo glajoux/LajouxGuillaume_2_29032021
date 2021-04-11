@@ -432,6 +432,77 @@ footer{
 /*Mise en place des media queries pour les tablettes */
 
 @media all and (min-width: 768px) and (max-width: 1023px){
+    nav{
+        width: 50%;
+    }
+
+    .filtre{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .filtre h2{
+        width: 100%;
+        text-align: left;
+    }
+
+    .filtre ul{
+        padding: 0;
+    }
+
+    #hebergement{
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    aside{
+        justify-content: space-around;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+
+    aside a{
+        margin: 15px auto;
+    }
+
+    aside img{
+        height: 165px;
+        width: 45%;
+    }
+
+    .conteneur{
+        width: calc(100% - 30px);
+    }
+
+    .bloc_general{
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .bloc_general .bloc, .bloc_general> a{
+        width: 48%;
+    }
+
+    .activite2{
+        height: 175px;
+    }
+
+    .bloc_general> a{
+        margin-bottom: 25px;
+    }
+
+    .activite4{
+        height: 175px;
+    }
+
+    .activite4 img{
+        height: 74%;
+    }
+
+    footer{
+        width: 95%;
+        margin: auto;
+    }
 
 }
 
