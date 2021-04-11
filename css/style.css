@@ -483,20 +483,25 @@ footer{
         width: 48%;
     }
 
-    .activite2{
+    .activite2, .activite3{
         height: 175px;
+    }
+
+    .activite2 img{
+        height: 68%;
     }
 
     .bloc_general> a{
         margin-bottom: 25px;
     }
 
-    .activite4{
-        height: 175px;
+    .bloc{
+        height: 425px;
+        margin-bottom: 25px;
     }
 
     .activite4 img{
-        height: 74%;
+        height: 76%;
     }
 
     footer{
