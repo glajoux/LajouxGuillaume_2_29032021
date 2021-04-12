@@ -110,6 +110,7 @@ input[type="button"]{
     color: white;
     background-color: #0065FC;
     border-radius: 0 8px 8px 0;
+    cursor: pointer;
 }
 
 i.fas.fa-search{
@@ -578,6 +579,7 @@ footer{
         padding:7px;
         background-color: #0065FC;
         border-radius: 8px;
+        cursor: pointer;
     }
 
     .fa-map-marker-alt{
