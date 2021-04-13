@@ -125,12 +125,16 @@ i.fas.fa-search{
 }
 
 .filtre{
-    width: 80%;
+    flex: ;
+    justify-content: flex-start;
 }
 
 .filtre ul{
     font-weight: bold;
-    width: 100%;
+}
+
+.filtre li{
+    margin: 10px;
 }
 
 .filtre h2{
@@ -607,6 +611,10 @@ footer{
         margin-top: 0;
     }
 
+    .filtre li{
+        margin: 0;
+    }
+
     .fa-info{
         float: left;
         margin-right: 8px;
@@ -709,6 +717,6 @@ footer{
     }
 
     .pied{
-        width: 100%;
+        width: 90%;
     }
 }
