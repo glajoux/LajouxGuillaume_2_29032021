@@ -39,7 +39,7 @@ a{
 /* Mise en place du header */
 header, nav ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 header{
@@ -47,11 +47,20 @@ header{
 }
 
 nav{
-    width: 40%;
+    flex: 3;
 }
 
-nav a{
-    color: #0065FC ;
+.logo{
+    flex: 2;
+}
+
+.inscrire{
+    margin: auto 0;
+    order: 3;
+}
+
+.inscrire a{
+    color: #0065FC;
 }
 
 nav a[href*="hebergement"]{
@@ -62,6 +71,8 @@ nav a[href*="hebergement"]{
 
 nav a[href*="activite"]{
     color: black;
+    margin-left: 90px;
+    margin-right: 90px;
 }
 
 /*Mise ne place de la partie recherche*/
@@ -440,10 +451,6 @@ footer h3{
 /*Mise en place des media queries pour les tablettes */
 
 @media all and (min-width: 768px) and (max-width: 1023px){
-    nav{
-        width: 50%;
-    }
-
     .filtre{
         flex-direction: column;
         width: 100%;
@@ -529,38 +536,59 @@ footer h3{
     }
     
     header {
-        margin-bottom: 80px;
-        padding: 0 20px;
+        flex-wrap: wrap;
     }
-    .puce1{
-        position: absolute;
-        width: 50%;
-        top: 12%;
-        left: 5%;
-        text-align: center;
-        border-bottom: 2px solid #0065FC;
-        padding-bottom: 10px;
+    
+    .logo, .inscrire{
+        flex: 1;
+    }
+
+    .logo{
+        padding-left: 20px;
+    }
+
+    .inscrire{
+        padding-right: 20px;
+    }
+
+    .inscrire{
+        order: 0;
+        text-align: right;
+    }
+
+    nav{
+        flex: 1 100%;
+    }
+
+    nav ul{
+        justify-content: space-between;
+        padding-left: 0;
     }
 
     nav a[href*="hebergement"]{
         border-top: none;
     }            
-
-    .puce2{
-        position: absolute; 
-        width: 50%;
-        top: 12%;
-        right: 5%;
-        text-align: center;
-        border-bottom: #F2F2F2 2px solid;
-        padding-bottom: 10px;
+    
+    nav a[href*="activite"]{
+        color: black;
+        margin: 0;
     }
     
-    nav ul .puce3{
-        width: 100%;
-        text-align: right;
+    .puce1{
+        width: 50%;
+        text-align: center;
+        border-bottom: #0065FC 2px solid;
+        padding-bottom: 8px;
     }
 
+    .puce2{
+        width: 50%;
+        text-align: center;
+        border-bottom: #F2F2F2 2px solid;
+        
+    }
+
+    
     .titre{
         width: 80%;
         margin: auto;
@@ -588,10 +616,11 @@ footer h3{
     i.fas.fa-search{
         display: block;
         margin: 0;
-        padding:7px;
+        padding: 10px;
         background-color: #0065FC;
         border-radius: 8px;
         cursor: pointer;
+        color: white;
     }
 
     .fa-map-marker-alt{
