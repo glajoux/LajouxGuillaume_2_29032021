@@ -1,12 +1,3 @@
-/*Déclaration des polices de caractères */
-@font-face {
-    font-family: 'raleway';
-    src: url('../font/Raleway-Light.ttf') format("truetype");
-    font-weight: normal;
-    font-style: normal;
-
-}
-/* Description des propiétés commune de la page */
 body{
     font-family: 'raleway' , sans-serif;
     margin: 0;
@@ -24,13 +15,9 @@ h1, h2{
 }
 
 p{
-    font-size: 0.9em;
+    font-size: 0.7rem;
 }
 
-h3{
-    font-size: 1.1em;
-    font-weight: bold;
-}
 
 .conteneur, aside, footer{
     background-color: #F2F2F2;
@@ -88,10 +75,10 @@ nav a[href*="activite"]{
 
 form{
     border: 1px solid #F2F2F2;
-    border-radius: 8px;
+    border-radius: 12px;
     width: 300px;
     background-color: #F2F2F2;
-    height: 30px;
+    height: 35px;
     display: flex;
     margin-bottom: 10px;
 }
@@ -182,7 +169,7 @@ i.fas.fa-search{
 }
 
 #hebergement h3{
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: bold;
 }
 
@@ -219,8 +206,6 @@ span{
 
 .logis{
     height: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 .logis img{
@@ -230,17 +215,23 @@ span{
     border-radius: 15px 15px 0 0;
 }
 
-.logis h3{
-    margin-bottom: 0;
+.logis__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30%;
+    padding: 0 10px;
+    margin: 0;
 }
 
-.logis p{
+.logis__info p, .logis__info h3{
     margin: 0;
 }
 
 .logis .etoile{
     color: #0065FC;
     justify-self: baseline;
+    font-size: 12px;
 }
 
 .plus{
@@ -303,6 +294,8 @@ aside img{
 aside .etoile{
     margin-top: auto; 
     color: #0065FC;
+    font-size: 12px;
+    padding-bottom: 5px;
 }
 
 
@@ -412,9 +405,15 @@ footer{
     padding-top: 20px;
 }
 
+footer h3{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
 .pied{
     width: 30%;
     margin-left: 50px;
+    font-size: 0.8em;
 }
 
 .pied ul{
@@ -510,6 +509,11 @@ footer{
 
 @media all and (max-width: 767px){
     /*Mise en place du header en media queries tel < 768px */
+    #bloc_page{
+        width: 100%;
+        margin: 0;
+    }
+    
     header {
         margin-bottom: 80px;
         padding: 0 20px;
@@ -557,6 +561,7 @@ footer{
     .recherche{
         width: 80%;
         margin: auto;
+        display: none;   /*enlever le display*/
     }
 
     input[type="search"]{
@@ -608,6 +613,8 @@ footer{
     #hebergement{
         flex-direction: column-reverse;
         height: 100%;
+        display: none;   /*enlever le display*/
+
     }
 
     aside{
@@ -660,8 +667,14 @@ footer{
         margin-top: 20px;
     }
     /*Mise en place de la partie activité en mode responsive pour les tel de <768px */
+    #activite {
+        width: 100%;
+        display: none;
+    }
+
+
     #activite h2{
-        margin-left: 25px;
+        padding-left: 25px;
     }
     
         .bloc_general{
@@ -697,11 +710,14 @@ footer{
     /*Mise en place de la partie footer en responsive pour tel <768px */
     footer{
         flex-direction: column;
-        width: 90%;
-        margin: 30px auto;
+        width: 100%;
+        margin: 0;
+        display: none;
     }
 
     .pied{
         width: 100%;
+        margin-left: 0;
+        padding-left: 25px;
     }
 }
