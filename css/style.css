@@ -220,11 +220,16 @@ span{
     flex-direction: column;
     justify-content: space-around;
     height: 30%;
-    padding: 0 10px;
+    padding-left: 10px;
+}
+
+.logis__info h3{
+    padding-top: 5px;
     margin: 0;
 }
 
-.logis__info p, .logis__info h3{
+.logis__info p{
+    padding-top: 5px;
     margin: 0;
 }
 
@@ -559,9 +564,8 @@ footer h3{
 
     /*Mise en place de la section recherche en media queries tel <768px */ 
     .recherche{
-        width: 80%;
+        width: 85%;
         margin: auto;
-        display: none;   /*enlever le display*/
     }
 
     input[type="search"]{
@@ -610,10 +614,14 @@ footer h3{
         margin-right: 8px;
     }
 
+    .recherche p{
+        margin-bottom: 20px;
+    }
+
+    /*Partie hebergement en responsive */
     #hebergement{
         flex-direction: column-reverse;
         height: 100%;
-        display: none;   /*enlever le display*/
 
     }
 
@@ -669,7 +677,6 @@ footer h3{
     /*Mise en place de la partie activité en mode responsive pour les tel de <768px */
     #activite {
         width: 100%;
-        display: none;
     }
 
 
@@ -710,14 +717,15 @@ footer h3{
     /*Mise en place de la partie footer en responsive pour tel <768px */
     footer{
         flex-direction: column;
-        width: 100%;
-        margin: 0;
-        display: none;
     }
 
     .pied{
-        width: 100%;
+        width: 90%;
         margin-left: 0;
         padding-left: 25px;
+    }
+
+    .pied li{
+        width: 70%;
     }
 }
