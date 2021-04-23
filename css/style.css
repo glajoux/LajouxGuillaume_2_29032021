@@ -100,8 +100,9 @@ form input{
     font-weight: bold;
 }
 
-form i{
+form label{
     margin: auto;
+    padding: 0 10px;
 }
 
 input[type="button"]{
